@@ -33,8 +33,8 @@ search on Internet by typing it in google or better [stackoverflow](http://stack
 4. test the program, launch it with :   
 `sudo ./frontPanel`    
 (assuming you're always in frontPanelProg directory).   
-Normally you will see something like this :   
-![If you are able to read GAME everything is good!](media/frontPanelOk.jpg)   
+Normally you should see something like this :   
+![If you are able to read GAME everything is good!](media/frontPanelOk.png)   
 5. to launch the programm on startup before any users have logged in, you need to edit `/etc/rc.local` :   
 `sudo nano /etc/rc.local`   
 add the following line after the commented lines (the lines beginning with #) :   

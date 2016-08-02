@@ -17,11 +17,14 @@ Pour plus d'infos voir [LISEZMOI.MD](LISEZMOI.MD)
 * Most of the original connectors were used.
 * HDMI, Composite compatible : usable on most TV.
 
+Rear panel of Troubadour :
+![rear panel](doc/media/rearPanel.jpg)
+
 ## Internal Wiring
 See [doc/wiring.md](doc/wiring.md)
 
 ## Volume control script
-See [vol_install.md](vol_install.md)
+See [doc/vol_install.md](doc/vol_install.md)
 
 ## Build the front panel program
 The program is written in C and launch on startup.   
