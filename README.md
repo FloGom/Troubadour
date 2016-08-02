@@ -20,13 +20,15 @@ Pour plus d'infos voir [LISEZMOI.MD](LISEZMOI.MD)
 Rear panel of Troubadour :
 ![rear panel](doc/media/rearPanel.jpg)
 
-## Internal Wiring
+## Build your own
+
+### Internal Wiring
 See [doc/wiring.md](doc/wiring.md)
 
-## Volume control script
+### Volume control script
 See [doc/vol_install.md](doc/vol_install.md)
 
-## Build the front panel program
+### Build the front panel program
 The program is written in C and launch on startup.   
 See [doc/build.md](doc/build.md) for further details.
 
