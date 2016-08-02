@@ -13,7 +13,7 @@ Pour plus d'infos voir [LISEZMOI.MD](LISEZMOI.MD)
 ## Features
 * Powered with a Raspberry Pi B.
 * Power supply from the TV decoder.
-* Original front panel used : volume control, display infos, shutdown button.
+* Original front panel used : volume control, display infos, shutdown button. See [doc/usage.md](doc/usage.md) for more details.
 * Most of the original connectors were used.
 * HDMI, Composite compatible : usable on most TV.
 
@@ -29,3 +29,8 @@ See [doc/vol_install.md](doc/vol_install.md)
 ## Build the front panel program
 The program is written in C and launch on startup.   
 See [doc/build.md](doc/build.md) for further details.
+
+You can add more features by editing the frontPanel.c program, see [doc/frontPanel_hack.md](doc/frontPanel_hack.md) to learn how.
+
+## License
+[GNU GPL v3](LICENSE)
