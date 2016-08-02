@@ -1,8 +1,8 @@
-# Troubadour
+# Troubadour - RetroPie system
 Troubadour is a RetroPie system installed in an old french TV decoder, a [Metronic Zapbox Easy 2](http://www.fnac.com/Metronic-Zapbox-Easy-2/a1663879/w-4) called MZE2 below.
 
 **Fr**   
-Troubadour est une console de jeux Rétro utilisant la distribution RetroPie, et installée dans un ancien décodeur TNT [Metronic Zapbox Easy 2](http://www.fnac.com/Metronic-Zapbox-Easy-2/a1663879/w-4) appelé MZE2 par la suite.
+Troubadour est une console de jeux RÃ©tro utilisant la distribution RetroPie, et installÃ©e dans un ancien dÃ©codeur TNT [Metronic Zapbox Easy 2](http://www.fnac.com/Metronic-Zapbox-Easy-2/a1663879/w-4) appelÃ© MZE2 par la suite.
 Pour plus d'infos voir [LISEZMOI.MD](LISEZMOI.MD)
 
 ![troubadour](doc/media/troubadour.png)
