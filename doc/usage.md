@@ -12,7 +12,9 @@ The message *quit* appears on the screen, inviting you to confirm with **OK** or
 ## Control the audio volume
 
 With `^`and `v` buttons you can increase or decrease the volume. Be sure to have the `vol`script installed.   
-See [vol_install.md](vol_install.md) for more details.
+See [vol_install.md](vol_install.md) for more details.   
+The screen go black for less than a second each time these buttons are pressed, it's normal. 
+The script is quiet slow to change the volume.
 
 ## Display messages and info
 
