@@ -1,4 +1,4 @@
-# Troubadour - RetroPie system
+﻿# Troubadour - RetroPie system
 Troubadour is a RetroPie system installed in an old french TV decoder, a [Metronic Zapbox Easy 2](http://www.fnac.com/Metronic-Zapbox-Easy-2/a1663879/w-4) called MZE2 below.
 
 **Fr**   
@@ -12,7 +12,7 @@ Pour plus d'infos voir [LISEZMOI.MD](LISEZMOI.MD)
 
 ## Features
 * Powered with a Raspberry Pi B.
-* Power supply from the TV decoder.
+* Power supply from the old TV decoder.
 * Original front panel used : volume control, display infos, shutdown button. See [doc/usage.md](doc/usage.md) for more details.
 * Most of the original connectors were used.
 * HDMI, Composite compatible : usable on most TV.

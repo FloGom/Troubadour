@@ -117,7 +117,7 @@ int main(void){
         // fait planter le programme si on déclare char *messages[3] = { ... } en ligne 95
         sprintf(messages[2], "%02d%02d", hoursPlayed, minutesPlayed);
         if(currentMsg==2){
-            zpe2println_colon(mot, 0, 1);
+            zpe2println_colon(mot, 0);
         }else{
             zpe2println(mot, 0);
         }
@@ -217,7 +217,7 @@ void zpe2println(char *word, char start){
     }
 }
 
-void zpe2println_colon(char *word, char start, int colon){
+void zpe2println_colon(char *word, char start){
     // print a full line of text during very small time
     int i, ordChar;
     // si char ordChar on a en sortie 218, 226, ... pas du tout ce qu'on attend, vérif' codage des nombres
@@ -234,7 +234,8 @@ void zpe2println_colon(char *word, char start, int colon){
             //delay(2000);
         }
         if( i == 2){
-            zpe2write(listChar[ordChar] + colon);
+            zpe2write(listChar[ordChar] + 1);
+            //last bit of 3rd digit (number 2) is for the colon
         }else{
             zpe2write(listChar[ordChar]);
         }
@@ -279,6 +280,13 @@ int zpe2buttons(void){
     }
     return buttonPressed;
 }
+//scrolling text
+//int compteur = zpe2println(char *word, int compteur)
+// pas malin pour gérer le temps (variable globale)
+//on utilise zpe2println()
+// on joue avec start
+//récup la longueur du texte =>calcul
+// => liste avec les longueurs (pas automatique)
 
 int minutes(double _startTime, double _endTime){
     return((int)(_endTime - _startTime)/60);
