@@ -183,7 +183,7 @@ void zpe2write(unsigned char octet){
     int i;
     for(i = 0; i<8; i++){
         digitalWrite(cp, 0);
-	// polarity is reverse, a XOR mask is used to revrsed it
+	// polarity is reverse, a XOR mask is used to reversed it
         unsigned char lsb = (word ^ 0b11111111) & 0b00000001;
         digitalWrite(serial, lsb);
         word = word >> 1;
