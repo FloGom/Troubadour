@@ -5,8 +5,7 @@
 ![frontPanel.png](media/frontPanel.png)
 
 ## Buttons
-There are 7 push buttons on the front panel :   
-![buttons](media/buttons.png)
+There are 7 push buttons on the front panel :
 
 ### 1. The Power button
 
@@ -30,4 +29,4 @@ By default the following messages will appears :
 * 1984
 * 00:02  =>  The time *(hh:mm)* since the start of the system.   
 
-If you want to add your messages or new functions see [frontPanel_hack.md](frontPanel_hack.md).
+If you want to add your messages or new functions see [How To Program the front panel](doc/how_to_program.md).
