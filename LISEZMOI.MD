@@ -7,7 +7,7 @@ Troubadour est une console de jeux Rétro utilisant la distribution RetroPie, et
 * **2016/08/02** - Création de ce répertoire.
 
 ## Fonctionnalités
-* Équipé d'un Raspberry Pi B
+* Équipée d'un Raspberry Pi B
 * Alimentation électrique provenant du vieux décodeur TNT
 * Panneau frontal original utilisé : contrôle du volume, affichage d'informations, bouton d'extinction.   Voir [doc/usage.md](doc/usage.md) pour plus d'infos.
 * La plupart des connecteurs originaux sont utilisés

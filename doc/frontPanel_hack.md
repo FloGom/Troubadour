@@ -16,8 +16,8 @@ With the schematics, we can think about the way it works.
 As you can see on the schematics, the polarity is reverse :
 * the transistors used are PNP, I made a reminder of their funcioning in the lower left corner for myself. Here they are used as commutators : if the B pin is set LOW, the current pass through the transistor from E to C.
 * the 7-segments display is a common anode display. To light up a segment you have to pull LOW the output pin (a, b, c...) and to pull HIGH the anode pin (here *dig1*):   
-	```
-	dig1 -------+----->|--- a
+	```text
+	dig1 -------+----->|--- a   
 	            |
 	            +----->|--- b
 	       	    |
