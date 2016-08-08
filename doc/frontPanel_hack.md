@@ -28,7 +28,7 @@ dig1 -------+----->|--- a
             .
             +----->|--- dot point
 ```    
-	With a PNP transistor ahead of the anode, the *dig1* must be pull LOW also to light up segments.
+With a PNP transistor ahead of the anode, the *dig1* must be pull LOW also to light up segments.
 
 
 ### b. 74HC164D chip
