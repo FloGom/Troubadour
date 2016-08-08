@@ -38,7 +38,7 @@ See [doc/build.md](doc/build.md) for further details.
 See [doc/frontPanel_hack.md](doc/frontPanel_hack.md).
 
 ### Add features to the front panel
-You can add more features by editing the frontPanel.c program, see [How To Program the front panel](how_to_program.md) to learn how.
+You can add more features by editing the frontPanel.c program, see [How To Program the front panel](doc/how_to_program.md) to learn how.
 
 ## License
 [GNU GPL v3](LICENSE)

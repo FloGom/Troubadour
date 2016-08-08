@@ -33,7 +33,7 @@ Voir [doc/build.md](doc/build.md)
 Voir [doc/frontPanel_hack.md](doc/frontPanel_hack.md).
 
 ### Ajouter des fonctionnalités au panneau frontal
-Vous pouvez ajoutez des fonctionnalités en modifiant le fichier frontPanel.c, voir [How To Program the front panel](how_to_program.md) pour apprendre comment.
+Vous pouvez ajoutez des fonctionnalités en modifiant le fichier frontPanel.c, voir [How To Program the front panel](doc/how_to_program.md) pour apprendre comment.
 
 ## License
 [GNU GPL v3](LICENSE)
