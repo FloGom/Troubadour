@@ -56,7 +56,7 @@ unsigned char listChar [] = {
 void zpe2write(unsigned char octet);
 void zpe2println(char *word, char start);
 void zpe2println_colon(char *word, char start, int _colon);
-void zpe2reset(void);
+//void zpe2reset(void);
 int zpe2buttons(void);
 
 int minutes(double _startTime, double _endTime);
@@ -72,7 +72,6 @@ int main(void){
     pinMode(cp, OUTPUT);
     pinMode(buttons, INPUT);
     // to avoid the error 'for' loop initial declarations are only allowed in mode C11 and C99
-    // char before the loop
     int i;
     for(i=0; i<4; i++){
         pinMode(dig1 + i, OUTPUT);
@@ -83,18 +82,11 @@ int main(void){
     time_t startTime, nowTime;
     startTime = time(NULL);
 
-    /*
-    // test
-    digitalWrite(dig1, 0);
-    zpe2write(listChar[0]);
-    */
 
-    // ===== LOOP =====
     char mot[] = "game";
-    const int msgLines = 3;
     // constante pour éviter des problèmes d'initialisation
     #define NUMITEMS 3
-    //                      0       1       2     3
+    //                             0       1       2     3
     char messages[NUMITEMS][5] = {"game", "1984", "time"};
     int currentMsg = 0;
 
@@ -107,6 +99,7 @@ int main(void){
     int minutesPlayed;
     int hoursPlayed;
 
+    // ===== LOOP =====
     while(1){
         nowTime = time(NULL);
 
@@ -114,40 +107,50 @@ int main(void){
         minutesPlayed = minutes(startTime, nowTime);
         hoursPlayed = hours(minutesPlayed);
         minutesPlayed = minutesPlayed - hoursPlayed*60;
-        // fait planter le programme si on déclare char *messages[3] = { ... } en ligne 95
+        // fait planter le programme si on déclare char *messages[3] = { ... } en ligne 90
         sprintf(messages[2], "%02d%02d", hoursPlayed, minutesPlayed);
+        
+        // choose to print colon or not
         if(currentMsg==2){
             zpe2println_colon(mot, 0);
         }else{
             zpe2println(mot, 0);
         }
 
+        // handle buttons events
         myButton = zpe2buttons();
         switch(evenement){
             // no button has been pressed before
             case 0: switch(myButton){
                         case 0: strcpy(mot, messages[currentMsg]);
                                 break;
+                        // button '^' has been pressed
                         case 1: strcpy(command, "vol +");
                                 system(command);
                                 break;
+                        // button 'v' has been pressed
                         case 2: strcpy(command, "vol -");
                                 system(command);
                                 break;
+                        // button '<' has been pressed
                         case 3: if(myButton != oldButton){
+                        		// display previous msg
                                     currentMsg--;
                                 }
                                 if (currentMsg < 0){
                                     currentMsg = NUMITEMS - 1;
                                 }
                                 break;
+                        // button '>' has been pressed
                         case 4: if(myButton != oldButton){
+                        		// display previous msg
                                     currentMsg++;
                                 }
                                 if(currentMsg > NUMITEMS - 1){
                                     currentMsg = 0;
                                 }
                                 break;
+                        // button power has been pressed
                         case 7: strcpy(mot, "quit");
                                 // go back home to avoid colon on quit when playing time is selected before
                                 currentMsg = 0;
@@ -161,11 +164,11 @@ int main(void){
                     oldButton = myButton;
                    
                     break;
-            // button power has been pressed
+            // power button has been pressed in the previous loop
             case 1: if(myButton == 5){ // confirm button 'ok'
                         strcpy(command, "sudo halt");
                         system(command);
-                    }else if(myButton == 6){ // cancel the action
+                    }else if(myButton == 6){ // cancel the action 'menu'
                         evenement = 0;
                     }
                     break;
@@ -212,13 +215,14 @@ void zpe2println(char *word, char start){
     zpe2write(listChar[ordChar]);
     // light up the digit (reverse polarity)
     digitalWrite(dig1 + i, 0);
-    delay(2);
+    // make a small pause in order to see the msg
+    delay(1);
     digitalWrite(dig1 + i, 1);
     }
 }
 
 void zpe2println_colon(char *word, char start){
-    // print a full line of text during very small time
+    // print a full line of text during very small time but with a colon
     int i, ordChar;
     // si char ordChar on a en sortie 218, 226, ... pas du tout ce qu'on attend, vérif' codage des nombres
     // '1' = 49
@@ -247,6 +251,8 @@ void zpe2println_colon(char *word, char start){
 }
 
 // to reset a digit we can also turn off the digit...
+// useless
+/*
 void zpe2resetDigit(void){
     // reset all digit
     digitalWrite(serial, 1);
@@ -256,6 +262,7 @@ void zpe2resetDigit(void){
         digitalWrite(cp, 1);
     }
 }
+*/
 
 int zpe2buttons(void){
     // return the number of the pressed button, see schematic for more details
@@ -280,12 +287,14 @@ int zpe2buttons(void){
     }
     return buttonPressed;
 }
-//scrolling text
-//int compteur = zpe2println(char *word, int compteur)
+
+// notes
+// scrolling text
+// int compteur = zpe2println(char *word, int compteur)
 // pas malin pour gérer le temps (variable globale)
-//on utilise zpe2println()
+// on utilise zpe2println()
 // on joue avec start
-//récup la longueur du texte =>calcul
+// récup la longueur du texte =>calcul
 // => liste avec les longueurs (pas automatique)
 
 int minutes(double _startTime, double _endTime){

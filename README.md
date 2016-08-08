@@ -16,6 +16,7 @@ Pour plus d'infos en français voir [LISEZMOI.MD](LISEZMOI.MD)
 * Power supply from the old TV decoder.
 * Original front panel used : volume control, display infos, shutdown button.    See [doc/usage.md](doc/usage.md) for more details.
 * Most of the original connectors were used.
+* USB power connector (+5V), for small speakers.
 * HDMI, Composite compatible : usable on most TV.
 
 Rear panel of Troubadour :

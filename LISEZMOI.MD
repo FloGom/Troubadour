@@ -11,6 +11,7 @@ Troubadour est une console de jeux Rétro utilisant la distribution RetroPie, et
 * Alimentation électrique provenant du vieux décodeur TNT
 * Panneau frontal original utilisé : contrôle du volume, affichage d'informations, bouton d'extinction.   Voir [doc/usage.md](doc/usage.md) pour plus d'infos.
 * La plupart des connecteurs originaux sont utilisés
+* Connecteur d'alimentation +5V USB, pour petites enceintes.
 * compatible avec la plupart des TV (HDMI et Composite (RCA AV))
 
 Panneau arrière de Troubadour :
