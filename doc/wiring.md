@@ -5,14 +5,14 @@
 
 I removed the mainboard of the decoder and used the original screw and holes to fix the perfboards.   
 For the Raspberry Pi, I did 2 holes in the bottom of the case and fix it using 2 bolts.
-Th Pi doesn't touch the case thanks to plastic screw anchors.
+The Pi doesn't touch the case thanks to plastic screw anchors.
 
 See [schematics/MZE2_Troubadour-PinOut.pdf](../schematics/MZE2_Troubadour-PinOut.pdf) for 
 a precise pin out of each connector.
 
 ### 1. Power supply   
 It's the original power supply. In this project we use 3.3V and 5V channels.
-We plug jumpers directly in the connector.   
+We plug jumpers directly into the connector.   
 
 IT COULD BE DANGEROUS, SO BE CAREFUL. DO NOT TOUCH COMPONENTS OF THE POWER SUPPLY.  
 

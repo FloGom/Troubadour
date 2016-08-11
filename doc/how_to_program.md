@@ -20,14 +20,14 @@ Button `OK` (5) and `MENU` (6) are not used, so you can add features.
 To do this edit the portion of code below the second `switch(myButton){`, add `case 5:` and `case 6:`.
 
 ### Mini case-study : a mini-game
-If you want for example add a mini game on the 4 digit display when you press the 'MENU' button you can do this as follow :
-* When button #6 is pressed put 2 in evenement variable.
-* In the first switch create the `case 2:` and put your code here for the mini game, don't forget that the loop can not be stoped during your mini-game. 
+If you want for example add a mini game on the 4 digit display when you press the `MENU` button you can do this as follow :
+* When button #6 is pressed put 2 in `evenement` variable.
+* In the first switch create the `case 2:` and put your code here for the mini game.
 Your game can use any of the button while you are in this evenment, even those previously used.
 * Don't forget to use one of them to quit the game.
 
 ## Wiring of buttons
-The integers returned by the function zpe2buttons are like below :
+The integers returned by the function `zpe2buttons` are like below :
 ```
                                buttons number
         ^       MENU    |            1       6 

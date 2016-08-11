@@ -6,7 +6,7 @@ This guide assumes you have a RPi install with the [RetroPie](https://retropie.o
 
 ### 1. Install tools   
 
-* The programm uses [wiringPi](http://wiringpi.com).   
+* The program uses [wiringPi](http://wiringpi.com).   
 [Download an install](http://wiringpi.com/download-and-install/) it from sources.
 
 
