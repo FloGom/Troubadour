@@ -34,6 +34,10 @@ See [doc/vol_install.md](doc/vol_install.md)
 The program is written in C and launch on startup.   
 See [doc/build.md](doc/build.md) for further details.
 
+#### Other languages
+You can find in the directory *frontPanelProg* the Arduino and python version of the code.   
+I maked the Arduino version to test my comprehension of the front panel. The python version is a first attempt to control the front panel with the Raspberry Pi but python is too slow.
+
 ### Reverse engineering the front panel
 See [doc/frontPanel_hack.md](doc/frontPanel_hack.md).
 
