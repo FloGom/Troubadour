@@ -64,7 +64,7 @@ It's not easy to desolder components with lot of pins like connectors.
 Here are advices from my experience :
 * Use a clean soldering iron.
 * Heat the component lead and the soldering pad on the motherboard.
-* With a desoldering pump, sucks melting solder.
+* With a desoldering pump, suck melting solder.
 * If you do not manage to suck the solder try applying new solder on the old solder. It will help to melt the solder.
 * Once the solder is removed try to wiggle the connector with a pair of pliers. 
 * If the connector does not come off the motherboard try it again with heating the connector leads. Secure the piece in a clamp before working on it.
